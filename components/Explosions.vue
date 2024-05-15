@@ -85,7 +85,6 @@ onBombExplode(({ location, size, id }, step) => {
       }
 
       if (step > size) {
-        console.log(cell);
         const explosionId = explosionMatrix.value[cell.x][cell.y];
         if (explosionId < 0) {
           if (explosionId === -id) {

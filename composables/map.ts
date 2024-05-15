@@ -40,9 +40,9 @@ const forbiddenCells = [
 ];
 
 const mapInfos = reactive({
-  width: 0,
-  height: 0,
-  cellSize: 0,
+  width: 9,
+  height: 9,
+  cellSize: 1,
 });
 
 const mapResizeCallbacks = ref<((oldValue: Record<string, number>) => void)[]>(

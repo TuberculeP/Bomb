@@ -20,7 +20,6 @@ function collectBonus(x: number, y: number) {
   const bonus = getBonus(x, y);
   if (!bonus) return;
   bonusList.value.splice(bonusList.value.indexOf(bonus), 1);
-  console.log(bonus.type);
   return bonus;
 }
 

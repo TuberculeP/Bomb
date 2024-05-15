@@ -27,10 +27,8 @@ onMapResize((oldValue) => {
   playerInfos.top = (playerInfos.top / oldValue.cellSize) * mapInfos.cellSize;
   playerInfos.left = (playerInfos.left / oldValue.cellSize) * mapInfos.cellSize;
   const oldPlayerSpeed = playerInfos.speed;
-  console.log({ oldPlayerSpeed });
   baseSpeed.value = mapInfos.cellSize / 50;
   playerInfos.speed = oldPlayerSpeed * (mapInfos.cellSize / oldValue.cellSize);
-  console.log({ playerInfos });
 });
 
 const { onUpdate } = useUpdateEvent();
@@ -186,7 +184,6 @@ onUpdate(() => {
           playerInfos.bombs++;
           break;
       }
-      console.log({ playerInfos });
     }
   }
 });
